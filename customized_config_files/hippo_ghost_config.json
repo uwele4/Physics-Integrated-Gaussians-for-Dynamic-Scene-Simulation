@@ -1,0 +1,51 @@
+{
+    "opacity_threshold": 0.02,
+    "rotation_degree": [],
+    "rotation_axis": [],
+    "substep_dt": 1e-4,
+    "frame_dt": 1e-2,
+    "frame_num": 300,
+    "E": 1e5,
+    "nu": 0.4,
+    "n_grid": 150,
+    "material": "jelly",
+    "density": 1500,
+    "g": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "boundary_conditions": [
+        {
+            "type": "bounding_box"
+        },
+        {
+            "type": "enforce_particle_translation",
+            "comment": "LINKE HÄLFTE: Greift von 0.45 bis 1.01 und zieht nach links",
+            "point": [0.7, 1.07, 0.75],
+            "size": [2.4, 2.60, 2.20],
+            "velocity": [-0.01, 0.0, 0.0],
+            "start_time": 0.0,
+            "end_time": 1000.0
+        }
+    ],
+    "mpm_space_vertical_upward_axis": [
+        0,
+        0,
+        1
+    ],
+    "mpm_space_viewpoint_center": [
+        1,
+        1,
+        0.7
+    ],
+    "default_camera_index": 0,
+    "show_hint": false,
+    "init_azimuthm": 150,
+    "init_elevation": 20.0,
+    "init_radius": 50,
+    "move_camera": false,
+    "delta_a": 1.0,
+    "delta_e": 0.0,
+    "delta_r": 0.0
+}
